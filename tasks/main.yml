@@ -9,9 +9,6 @@
   notify:
     - restart mysql
 
-- debug:
-    msg: "{{mysql}}"
-
 # this is for travis and i might reaching the point to code for tests
 - meta: flush_handlers
 
