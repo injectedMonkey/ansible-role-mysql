@@ -1,0 +1,22 @@
+galaxy_info:
+  author: injectedMonkey
+  description: mysql role for personal use.
+  company: injectedMonkey.wtf
+  license: license (BSD)
+  min_ansible_version: 2.4
+  platforms:
+    - name: Debian
+      versions:
+      - jessie
+    - name: Ubuntu
+      versions:
+      - xenial
+      - trusty
+  galaxy_tags:
+    - development
+    - mysql
+    - mariadb
+    - ubuntu
+    - debian
+    - unstable
+dependencies: []
