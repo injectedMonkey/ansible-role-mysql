@@ -5,32 +5,32 @@ env:
   - distro: ubuntu1604
     init: /lib/systemd/systemd
     run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    extra_vars: "\"{'mysql': {'packages':['mariadb-server', 'mariadb-client']}}\""
+    extra_vars: "\"{'mysql': {'packages':['mariadb-server', 'mariadb-client', 'python-mysqldb']}}\""
 
   - distro: ubuntu1604
     init: /lib/systemd/systemd
     run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    extra_vars: "\"{'mysql': {'packages':['mysql-server', 'mysql-client']}}\""
+    extra_vars: "\"{'mysql': {'packages':['mysql-server', 'mysql-client', 'python-mysqldb']}}\""
 
   - distro: ubuntu1404
     init: /sbin/init
     run_opts: ""
-    extra_vars: "\"{'mysql': {'packages':['mariadb-server', 'mariadb-client']}}\""
+    extra_vars: "\"{'mysql': {'packages':['mariadb-server', 'mariadb-client', 'python-mysqldb']}}\""
 
   - distro: ubuntu1404
     init: /sbin/init
     run_opts: ""
-    extra_vars: "\"{'mysql': {'packages':['mysql-server', 'mysql-client']}}\""
+    extra_vars: "\"{'mysql': {'packages':['mysql-server', 'mysql-client', 'python-mysqldb']}}\""
 
   - distro: debian8
     init: /lib/systemd/systemd
     run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    extra_vars: "\"{'mysql': {'packages':['mariadb-server', 'mariadb-client']}}\""
+    extra_vars: "\"{'mysql': {'packages':['mariadb-server', 'mariadb-client', 'python-mysqldb']}}\""
 
   - distro: debian8
     init: /lib/systemd/systemd
     run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    extra_vars: "\"{'mysql': {'packages':['mysql-server', 'mysql-client']}}\""
+    extra_vars: "\"{'mysql': {'packages':['mysql-server', 'mysql-client', 'python-mysqldb']}}\""
 
 services:
   - docker
